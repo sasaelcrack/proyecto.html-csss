@@ -982,3 +982,398 @@ body:has(input[type="checkbox"]:checked) > footer > .titulo-footer {
 }
 
 
+/* =============================================
+   RESPONSIVE — TABLET (≤ 1024px)
+   ============================================= */
+@media (max-width: 1024px) {
+
+  :root {
+    --split: 0%;
+  }
+
+  body > header {
+    padding: 0 1.5rem;
+    background: var(--oscuro);
+  }
+
+  body > header > nav > ul {
+    gap: 1.2rem;
+  }
+
+  /* Hero */
+  .seccion-presentacion {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .seccion-presentacion > .lado-imagen {
+    padding: 4rem 2rem 2rem;
+    min-height: 40vh;
+  }
+
+  .seccion-presentacion > .lado-imagen > img {
+    max-width: 360px;
+  }
+
+  .seccion-presentacion > .lado-texto {
+    padding: 3rem 2.5rem 4rem;
+  }
+
+  .seccion-presentacion > .lado-texto > h1 {
+    font-size: 2.4rem;
+  }
+
+  /* Writing index */
+  .seccion-writing-index > .contenedor > h2 {
+    font-size: 3rem;
+  }
+
+  /* Speaking index */
+  .seccion-speaking-index > .contenedor > .parte-superior {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .seccion-speaking-index > .contenedor > .parte-superior > section > h2 {
+    font-size: 2.6rem;
+  }
+
+  /* Charlas */
+  .charla {
+    grid-template-columns: 140px 1fr;
+    gap: 1.5rem;
+  }
+
+  /* Posts */
+  .cuadricula-posts {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  /* Speaking page */
+  .seccion-presentacion-speaking {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    min-height: auto;
+    padding: 5rem 2rem 3rem;
+  }
+
+  .seccion-presentacion-speaking > section > h1 {
+    font-size: 3rem;
+  }
+
+  /* Video reproductor */
+  .reproductor {
+    grid-template-columns: 1fr;
+  }
+
+  .pestanas-videos {
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 0.5rem;
+  }
+
+  .pestanas-videos > li > a {
+    border-left: none;
+    border-bottom: 3px solid transparent;
+    white-space: nowrap;
+  }
+
+  .pestanas-videos > li > a:hover,
+  .pestanas-videos > li > a.activo {
+    border-left-color: transparent;
+    border-bottom-color: var(--morado);
+  }
+
+  /* Workshop intro */
+  .seccion-intro-workshop {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    min-height: auto;
+  }
+
+  .seccion-intro-workshop > aside {
+    padding-top: 0;
+  }
+
+  .seccion-intro-workshop > section > h1 {
+    font-size: 2.6rem;
+  }
+
+  /* Aprendizaje */
+  .seccion-aprendizaje > .contenedor-aprendizaje {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  /* Tweets */
+  .cuadricula-tweets {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Footer */
+  body > footer {
+    padding: 2rem 1.5rem;
+  }
+
+  body > footer > .titulo-footer {
+    font-size: 2.5rem;
+  }
+}
+
+
+/* =============================================
+   RESPONSIVE — MÓVIL (≤ 640px)
+   ============================================= */
+@media (max-width: 640px) {
+
+  body > header {
+    padding: 0 1.2rem;
+    height: 64px;
+  }
+
+  body > header > .logo {
+    font-size: 1.7rem;
+  }
+
+  body > header > nav {
+    gap: 1rem;
+  }
+
+  body > header > nav > ul {
+    display: none; /* Ocultar nav links en móvil; activar con hamburguesa si se implementa */
+  }
+
+  main {
+    padding-top: 64px;
+  }
+
+  .contenedor {
+    padding: 0 1.2rem;
+  }
+
+  /* Hero */
+  .seccion-presentacion > .lado-imagen {
+    padding: 3rem 1.5rem 1.5rem;
+    min-height: 30vh;
+  }
+
+  .seccion-presentacion > .lado-imagen > img {
+    max-width: 260px;
+  }
+
+  .seccion-presentacion > .lado-texto {
+    padding: 2.5rem 1.5rem 3rem;
+  }
+
+  .seccion-presentacion > .lado-texto > .saludo {
+    font-size: 1.4rem;
+  }
+
+  .seccion-presentacion > .lado-texto > h1 {
+    font-size: 1.9rem;
+  }
+
+  /* Writing index */
+  .seccion-writing-index {
+    padding: 4rem 1.2rem 3rem;
+  }
+
+  .seccion-writing-index > .contenedor > h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cuadricula-tarjetas {
+    grid-template-columns: 1fr;
+  }
+
+  /* Speaking index */
+  .seccion-speaking-index {
+    padding: 4rem 1.2rem;
+  }
+
+  .seccion-speaking-index > .contenedor > .parte-superior > section > h2 {
+    font-size: 2rem;
+  }
+
+  /* Charlas */
+  .charla {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+    padding: 1.5rem 0;
+  }
+
+  .charla > .meta-charla > .linea-divisora {
+    display: none;
+  }
+
+  .charla > .contenido-charla > h3 {
+    font-size: 1.2rem;
+  }
+
+  /* Writing header */
+  .encabezado-writing {
+    padding: 4rem 1.2rem 3rem;
+    min-height: auto;
+  }
+
+  .caja-titulo-writing {
+    padding: 2rem 1.5rem;
+  }
+
+  .caja-titulo-writing > h1 {
+    font-size: 2.4rem;
+  }
+
+  /* Artículos */
+  .seccion-articulos {
+    padding: 3.5rem 1.2rem;
+  }
+
+  .cuadricula-posts {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .post-destacado > h3 {
+    font-size: 1.4rem;
+  }
+
+  /* Speaking page */
+  .seccion-presentacion-speaking {
+    padding: 4rem 1.2rem 2.5rem;
+    gap: 2rem;
+  }
+
+  .seccion-presentacion-speaking > section > h1 {
+    font-size: 2.2rem;
+  }
+
+  /* Videos */
+  .seccion-videos {
+    padding: 3.5rem 1.2rem;
+  }
+
+  .seccion-videos > .contenedor > h2 {
+    font-size: 1.9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Próximos eventos */
+  .proximos-eventos {
+    padding: 3.5rem 1.2rem;
+  }
+
+  .proximos-eventos > .contenedor > h2 {
+    font-size: 1.9rem;
+  }
+
+  /* Todas las charlas */
+  .seccion-todas-charlas {
+    padding: 3.5rem 1.2rem;
+  }
+
+  /* Workshop intro */
+  .seccion-intro-workshop {
+    padding: 4rem 1.2rem 2.5rem;
+    gap: 2rem;
+  }
+
+  .seccion-intro-workshop > section > h1 {
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+  }
+
+  /* Aprendizaje */
+  .seccion-aprendizaje {
+    padding: 3.5rem 1.2rem;
+  }
+
+  /* Testimonios */
+  .seccion-testimonios {
+    padding: 3.5rem 1.2rem;
+  }
+
+  .seccion-testimonios > .contenedor > h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Tweets */
+  .cuadricula-tweets {
+    grid-template-columns: 1fr;
+  }
+
+  /* CTA final */
+  .cta-final {
+    padding: 3rem 1.2rem;
+  }
+
+  /* Botones */
+  .boton-borde,
+  .boton-morado {
+    padding: 0.8rem 1.4rem;
+    font-size: 0.9rem;
+  }
+
+  /* Footer */
+  body > footer {
+    padding: 1.5rem 1rem;
+    position: static; /* Evitar que tape contenido en móvil */
+  }
+
+  body > footer > .caja-footer {
+    grid-template-columns: 1fr;
+    padding: 2rem 1.5rem;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  body > footer > .caja-footer > .contacto > nav > ul {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  body > footer > .caja-footer > .avatar-footer > img {
+    width: 180px;
+    height: 180px;
+  }
+
+  body > footer > .titulo-footer {
+    font-size: 1.8rem;
+    padding: 0 1rem;
+  }
+}
+
+
+/* =============================================
+   RESPONSIVE — MÓVIL PEQUEÑO (≤ 380px)
+   ============================================= */
+@media (max-width: 380px) {
+
+  body > header > .logo {
+    font-size: 1.4rem;
+  }
+
+  .seccion-presentacion > .lado-texto > h1 {
+    font-size: 1.6rem;
+  }
+
+  .caja-titulo-writing > h1 {
+    font-size: 2rem;
+  }
+
+  .seccion-presentacion-speaking > section > h1 {
+    font-size: 1.9rem;
+  }
+
+  .seccion-intro-workshop > section > h1 {
+    font-size: 1.7rem;
+  }
+
+  body > footer > .titulo-footer {
+    font-size: 1.4rem;
+  }
+}
